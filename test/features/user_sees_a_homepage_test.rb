@@ -20,7 +20,7 @@ class HomepageTest < CapybaraTestCase
   def test_user_sees_about_page
     visit '/about'
 
-    save_and_open_page
+    # save_and_open_page
     assert page.has_content?("Here's some stuff to know.")
     assert_equal 200, page.status_code
   end
