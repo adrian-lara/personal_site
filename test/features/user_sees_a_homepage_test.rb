@@ -4,6 +4,7 @@ class HomepageTest < CapybaraTestCase
   def test_user_can_see_the_homepage
     visit '/'
 
+    # require 'pry'; binding.pry
     assert page.has_content?("Welcome!")
     assert_equal 200, page.status_code
   end
