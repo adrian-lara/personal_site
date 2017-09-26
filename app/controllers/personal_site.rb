@@ -5,6 +5,7 @@ class PersonalSite
   def self.call(env)
     case env["PATH_INFO"]
     when '/' then index
+    when '/about' then about
     else
       error
     end
